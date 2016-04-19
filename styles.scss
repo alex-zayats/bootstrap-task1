@@ -1,0 +1,57 @@
+html{
+    font-size: 14px;
+}
+
+.container-fluid{
+	padding: 0;
+
+	.affix{
+		width: 100%;
+		top: 0;
+	}
+}
+
+#header{
+	background: url("../img/head.jpg") center center no-repeat;
+	height: 600px;
+	width: 100%;
+	text-align: center;
+
+	i.fa-star-o{
+		font-size: 77px;
+		margin: 0 auto;
+		margin-top: 185px;
+		margin-bottom: 65px;
+		color: white;
+	}
+
+	.greeting{
+		display: block;
+		font: 80px Angel, Arial, sans-serif;
+		color: #fff;
+		text-transform: capitalize;  
+	}
+}
+
+.navbar {
+	background-image: none;
+	margin: 0;
+	> .container-fluid{
+		max-width: 1140px;
+		margin: 0 auto;
+		.nav.navbar-nav{
+				li a{
+				    line-height: 50px;
+				    color: white;
+				}
+			    li.active a, a:hover{
+			    	background-image: none;
+			    	background-color: #eb2c33;
+			    }
+		    }
+		}
+	}
+
+#services, #pricing, #slider, #about {
+	height: 1000px;
+}
