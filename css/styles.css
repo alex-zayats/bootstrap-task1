@@ -3,9 +3,16 @@ html {
 
 .container-fluid {
   padding: 0; }
-  .container-fluid .affix {
-    width: 100%;
-    top: 0; }
+
+.row-fluid:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.affix {
+  width: 100%;
+  top: 0;
+  z-index: 10; }
 
 #header {
   background: url("../img/head.jpg") center center no-repeat;
@@ -20,7 +27,7 @@ html {
     color: white; }
   #header .greeting {
     display: block;
-    font: 80px Angel, Arial, sans-serif;
+    font: 80px lobster, Arial, sans-serif;
     color: #fff;
     text-transform: capitalize; }
 
@@ -31,11 +38,81 @@ html {
     max-width: 1140px;
     margin: 0 auto; }
     .navbar > .container-fluid .nav.navbar-nav li a {
-      line-height: 50px;
+      line-height: 48px;
       color: white; }
     .navbar > .container-fluid .nav.navbar-nav li.active a, .navbar > .container-fluid .nav.navbar-nav a:hover {
       background-image: none;
       background-color: #eb2c33; }
 
-#services, #pricing, #slider, #about {
-  height: 1000px; }
+.section {
+  margin: 0; }
+  .section .content {
+    height: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-top: 100px;
+    text-align: center; }
+    .section .content .main-section-item {
+      margin-bottom: 75px; }
+      .section .content .main-section-item .section-title {
+        font: 30px lobster, Arial, sans-serif;
+        margin-bottom: 33px; }
+      .section .content .main-section-item .section-descr {
+        font-size: 20px;
+        color: #717171; }
+    .section .content .section-item .section-icon {
+      font-size: 25px; }
+    .section .content .section-item .section-title {
+      font-size: 23px;
+      margin-bottom: 15px;
+      font-weight: bold; }
+    .section .content .section-item .section-descr {
+      color: #717171; }
+
+#features {
+  padding-bottom: 120px; }
+  #features .section-item {
+    margin-top: 20px; }
+
+#services {
+  position: relative;
+  min-height: 735px;
+  background: url("../img/picture.jpg") center center no-repeat; }
+  #services:before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); }
+  #services .main-section-item {
+    margin-bottom: 75px;
+    color: white; }
+    #services .main-section-item .section-title {
+      font: 30px lobster, Arial, sans-serif;
+      margin-bottom: 33px; }
+    #services .main-section-item .section-descr {
+      font-size: 20px;
+      color: white; }
+  #services .section-item {
+    padding: 0px 15px 40px 15px; }
+    #services .section-item .item-cell {
+      position: relative;
+      background-color: white;
+      border-radius: 5px;
+      padding: 40px 55px 50px 120px;
+      text-align: left; }
+      #services .section-item .item-cell:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        width: 66px;
+        height: 105px;
+        background: url("../img/lamp.jpg") center center no-repeat; }
+
+#buyModal .modal-dialog {
+  width: 355px;
+  height: 322px;
+  margin-top: 180px; }
