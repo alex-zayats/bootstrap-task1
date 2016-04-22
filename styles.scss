@@ -1,7 +1,9 @@
 html{
     font-size: 14px;
 }
-
+p{
+	margin: 0;
+}
 $content-width: 1140px;
 
 .container-fluid{
@@ -17,7 +19,7 @@ $content-width: 1140px;
 .affix{
 	width: 100%;
 	top: 0;
-	z-index: 10;
+	z-index: 25;
 }
 
 #header{
@@ -36,7 +38,7 @@ $content-width: 1140px;
 
 	.greeting{
 		display: block;
-		font: 80px lobster, Arial, sans-serif;
+		font: 70px lobster, Arial, sans-serif;
 		color: #fff;
 		text-transform: capitalize;  
 	}
@@ -60,9 +62,6 @@ $content-width: 1140px;
 		    }
 		}
 	}
-
-#features, #services, #pricing, #slider, #about {
-}
 
 .section {
 	margin: 0;
@@ -150,7 +149,130 @@ $content-width: 1140px;
 	    }
 	}
 }
-
+#pricing{
+	margin-bottom: 150px;
+	.section-title{
+		margin: 0;
+	}
+	.section-item{
+	    padding: 0px 15px 0px 15px;
+	    .item-cell{
+			background-color: #f5f5f5;
+		    padding: 45px 0px 40px;
+		    text-align: center;
+		    border-top: 7px solid #343434;
+		    .section-title{
+		    	margin-bottom: 40px;
+		    }
+		    .price{
+		    	margin-bottom: 40px;
+		    	line-height: 43px;
+		    	span{
+		    		font-size: 43px;
+		    		font-weight: bold;
+			    }
+		    }
+		    p{
+		    	margin-bottom: 15px;
+		    }
+		    .btn{
+		    	margin-top: 40px;
+		    	color: white;
+		    	background-color: #333;
+		    	&:hover{
+			    	background-color: #666;		    		
+		    	}
+		    }
+	    }
+	}	
+}
+#slider{
+	.carousel-caption{
+		position: absolute;
+		top: 40%;
+	}
+	.carousel-indicators .active{
+		background-color: #e22f2a;
+	}
+}
+#about{
+	.section-title{
+		margin: 0;
+	}
+	.progress-bar{
+		background-image: none;
+	}
+	.progress-bar-info{
+		background-color: #2d7da4;
+	}
+	.progress-bar-success{
+		background-color: #6aa42f;
+	}
+	.progress-bar-warning{
+		background-color: #ffcc33;
+	}
+	.progress-bar-danger{
+		background-color: #db3615;
+	}
+	h5{
+		text-align: left;
+		font-size: 24px;
+		font-weight: bold;
+	}
+	.panel-heading{
+		text-align: left;
+		cursor: pointer;
+		position: relative;
+		.panel-title{
+			font-size: 17px;
+			font-weight: bold;
+		}
+		&:after{
+    		content: "\e080";
+    		font-family: 'Glyphicons Halflings';
+    		display: block;
+		    position: absolute;
+		    right: 20px;
+		    top: 10px;
+		    font-size: 13px;
+    	}
+	}
+	.panel-body{
+		img{
+			width: 76px;
+			float: left;
+			border-radius: 50%;
+    		box-shadow: 0px 0 3px 0px gray;
+		}
+		.collapse-content{
+			margin-left: 85px;
+			text-align: left;
+			.collapse-title{
+				font-size: 19px;
+				font-weight: bold;
+			}
+		}
+	}
+}
+#links{
+	background-color: #f5f5f5;
+	.links-content{
+		text-align: left;
+		.col-title{
+			font-size: 27px;
+			font-weight: bold;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			margin-bottom: 25px;
+		}
+		p{
+			font-size: 20px;
+			color: #808387;
+			margin-bottom: 20px;
+			text-shadow: 0px 0px 1px #E6E3E3;
+		}
+	}
+}
 #buyModal{
 	.modal-dialog{
 	    width: 355px;

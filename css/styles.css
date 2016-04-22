@@ -1,6 +1,9 @@
 html {
   font-size: 14px; }
 
+p {
+  margin: 0; }
+
 .container-fluid {
   padding: 0; }
 
@@ -12,7 +15,7 @@ html {
 .affix {
   width: 100%;
   top: 0;
-  z-index: 10; }
+  z-index: 25; }
 
 #header {
   background: url("../img/head.jpg") center center no-repeat;
@@ -27,7 +30,7 @@ html {
     color: white; }
   #header .greeting {
     display: block;
-    font: 80px lobster, Arial, sans-serif;
+    font: 70px lobster, Arial, sans-serif;
     color: #fff;
     text-transform: capitalize; }
 
@@ -111,6 +114,109 @@ html {
         width: 66px;
         height: 105px;
         background: url("../img/lamp.jpg") center center no-repeat; }
+
+#pricing {
+  margin-bottom: 150px; }
+  #pricing .section-title {
+    margin: 0; }
+  #pricing .section-item {
+    padding: 0px 15px 0px 15px; }
+    #pricing .section-item .item-cell {
+      background-color: #f5f5f5;
+      padding: 45px 0px 40px;
+      text-align: center;
+      border-top: 7px solid #343434; }
+      #pricing .section-item .item-cell .section-title {
+        margin-bottom: 40px; }
+      #pricing .section-item .item-cell .price {
+        margin-bottom: 40px;
+        line-height: 43px; }
+        #pricing .section-item .item-cell .price span {
+          font-size: 43px;
+          font-weight: bold; }
+      #pricing .section-item .item-cell p {
+        margin-bottom: 15px; }
+      #pricing .section-item .item-cell .btn {
+        margin-top: 40px;
+        color: white;
+        background-color: #333; }
+        #pricing .section-item .item-cell .btn:hover {
+          background-color: #666; }
+
+#slider .carousel-caption {
+  position: absolute;
+  top: 40%; }
+
+#slider .carousel-indicators .active {
+  background-color: #e22f2a; }
+
+#about .section-title {
+  margin: 0; }
+
+#about .progress-bar {
+  background-image: none; }
+
+#about .progress-bar-info {
+  background-color: #2d7da4; }
+
+#about .progress-bar-success {
+  background-color: #6aa42f; }
+
+#about .progress-bar-warning {
+  background-color: #ffcc33; }
+
+#about .progress-bar-danger {
+  background-color: #db3615; }
+
+#about h5 {
+  text-align: left;
+  font-size: 24px;
+  font-weight: bold; }
+
+#about .panel-heading {
+  text-align: left;
+  cursor: pointer;
+  position: relative; }
+  #about .panel-heading .panel-title {
+    font-size: 17px;
+    font-weight: bold; }
+  #about .panel-heading:after {
+    content: "\e080";
+    font-family: 'Glyphicons Halflings';
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 13px; }
+
+#about .panel-body img {
+  width: 76px;
+  float: left;
+  border-radius: 50%;
+  box-shadow: 0px 0 3px 0px gray; }
+
+#about .panel-body .collapse-content {
+  margin-left: 85px;
+  text-align: left; }
+  #about .panel-body .collapse-content .collapse-title {
+    font-size: 19px;
+    font-weight: bold; }
+
+#links {
+  background-color: #f5f5f5; }
+  #links .links-content {
+    text-align: left; }
+    #links .links-content .col-title {
+      font-size: 27px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 25px; }
+    #links .links-content p {
+      font-size: 20px;
+      color: #808387;
+      margin-bottom: 20px;
+      text-shadow: 0px 0px 1px #E6E3E3; }
 
 #buyModal .modal-dialog {
   width: 355px;
