@@ -165,6 +165,14 @@ $content-width: 1140px;
 		    	margin-bottom: 40px;
 		    }
 		    .price{
+		    	&:before{
+		    		content:"$";
+		    		display: inline;
+		    		font-size: 14px;
+		    		line-height: 30px;
+		    		margin-right: 3px;
+		    		vertical-align: top;
+		    	}
 		    	margin-bottom: 40px;
 		    	line-height: 43px;
 		    	span{
@@ -266,17 +274,64 @@ $content-width: 1140px;
 			margin-bottom: 25px;
 		}
 		p{
-			font-size: 20px;
+			font-size: 18px;
 			color: #808387;
 			margin-bottom: 20px;
 			text-shadow: 0px 0px 1px #E6E3E3;
 		}
 	}
 }
+#footer{
+  height: 80px;
+  padding-top: 30px;
+  background-color: #2E2E2E;
+  border-top: 5px solid #C62E2B;
+  .content{
+  	padding: 0;
+    text-align: inherit;
+  }
+  .rights{
+  	color: white;
+  }
+  .links{
+  	li{
+  		display: inline-block;
+	    margin-right: 8px;
+	    text-decoration: none;
+	    a{
+	    	color: white;
+	    }
+  	}
+  }
+}
 #buyModal{
 	.modal-dialog{
-	    width: 355px;
-	    height: 322px;
+		width: 355px;
 		margin-top: 180px;
+		.modal-content{
+			height: 325px;
+			background-color: #F7F7F7;
+			.modal-title{
+				margin: 30px 0 40px;
+        		font-size: 22px;
+			}
+			input{
+		        border-radius: 0;
+		        margin-bottom: 8px;
+		        height: 40px;
+			}
+			.btn.login{
+		        width: 100%;
+		        background-color: #4E90FE;
+		        color: white;
+		        margin-bottom: 15px;
+		        line-height: 45px;
+		        border-radius: 0;
+			}
+			a{
+				color: #A5A5A5;
+				font-size: 13px;
+			}
+		}
 	}
 }

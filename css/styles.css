@@ -131,6 +131,14 @@ p {
       #pricing .section-item .item-cell .price {
         margin-bottom: 40px;
         line-height: 43px; }
+        #pricing .section-item .item-cell .price:before{
+            content:"$";
+            display: inline;
+            color: 
+            font-size: 14px;
+            line-height: 30px;
+            margin-right: 3px;
+            vertical-align: top;}
         #pricing .section-item .item-cell .price span {
           font-size: 43px;
           font-weight: bold; }
@@ -213,12 +221,50 @@ p {
       letter-spacing: 2px;
       margin-bottom: 25px; }
     #links .links-content p {
-      font-size: 20px;
+      font-size: 18px;
       color: #808387;
       margin-bottom: 20px;
       text-shadow: 0px 0px 1px #E6E3E3; }
 
 #buyModal .modal-dialog {
   width: 355px;
-  height: 322px;
-  margin-top: 180px; }
+  margin-top: 180px;}
+  #buyModal .modal-dialog .modal-content{
+      height: 325px; 
+      background-color: #F7F7F7; }
+    #buyModal .modal-dialog .modal-content .modal-title{
+        margin: 20px 0 30px;
+        font-size: 22px;
+        font-weight: bold;
+        text-align: center;
+        letter-spacing: 2px; }
+    #buyModal .modal-dialog .modal-content input{
+        border-radius: 0;
+        margin-bottom: 8px;
+        height: 40px; }
+    #buyModal .modal-dialog .modal-content .btn.login{
+        width: 100%;
+        background-color: #4E90FE;
+        color: white;
+        margin-bottom: 15px;
+        line-height: 45px;
+        border-radius: 0; }
+    #buyModal .modal-dialog .modal-content a{
+        color: #A5A5A5;
+        font-size: 13px; }
+#footer{
+  height: 80px;
+  padding-top: 30px;
+  background-color: #2E2E2E;
+  border-top: 5px solid #C62E2B;}
+  #footer .content{
+    padding: 0;
+    text-align: inherit; }
+  #footer .rights{
+    color: white; }
+  #footer .links li{
+    display: inline-block;
+    margin-right: 8px;
+    text-decoration: none; }
+    #footer .links li a{
+      color: white; }
